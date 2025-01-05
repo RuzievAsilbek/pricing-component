@@ -19,7 +19,24 @@
 <main class="main-content">
   <div class=" page container">
     <h1 class="page-title">Our Pricing</h1>
-    <div style="margin-bottom: 64px;">Switch</div>
+    <!-- switch -->
+    <form class="pricing-switch" action="https://echo.hmtlacademy.ru" method="get">
+      <div class="switch">
+        <!-- radio -->
+        <input class="switch-input-annual visually-hidden" type="radio" name="payment_period" value="annual" id="annual-payment-period">
+        <input class="switch-input-monthly visually-hidden" type="radio" name="payment_period" value="monthly" id="monthly-payment-period">
+
+        <label class="switch-label" for="annual-payment-period">Annually</label>
+        <!-- switch-control -->
+        <div class="switch-control">
+          <div class="switch-circle"></div>
+          <label class="switch-control-annual" for="annual-payment-period"></label>
+          <label class="switch-control-monthly" for="monthly-payment-period"></label>
+        </div>
+
+        <label class="switch-label" for="monthly-payment-period">Monthly</label>
+      </div>
+    </form>
 
     <section class="pricing">
       <h2 class="visually-hidden">Pricing</h2>
